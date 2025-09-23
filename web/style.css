@@ -5,7 +5,7 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
-  background: #0b0d12;
+  background: radial-gradient(circle at top, rgba(33, 82, 162, 0.25), transparent 55%), #05070f;
   color: #f5f5f5;
   overflow: hidden;
 }
@@ -29,15 +29,18 @@ body {
 .overlay__panel {
   max-width: 320px;
   padding: 1.5rem 2rem;
-  background: rgba(12, 18, 28, 0.85);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(8, 13, 24, 0.85);
+  border: 1px solid rgba(90, 210, 255, 0.35);
   border-radius: 12px;
   box-shadow: 0 10px 45px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(6px);
 }
 
 .overlay__panel h1 {
   margin: 0 0 0.75rem;
   font-size: 1.6rem;
+  color: #5ad2ff;
+  text-shadow: 0 0 12px rgba(90, 210, 255, 0.45);
 }
 
 .overlay__panel ul {
@@ -48,5 +51,5 @@ body {
 .overlay__hint {
   margin: 0;
   font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(90, 210, 255, 0.75);
 }
